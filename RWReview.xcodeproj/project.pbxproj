@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		EEA3BC79246B3C5400ED9291 /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC78246B3C5400ED9291 /* EmployeesViewModel.swift */; };
 		EEA3BC7D246B3D4500ED9291 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC7C246B3D4500ED9291 /* Employee.swift */; };
 		EEA3BC80246B3E6300ED9291 /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC7F246B3E6300ED9291 /* EmployeeViewModel.swift */; };
+		EEA3BC83246B3F1800ED9291 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = EEA3BC82246B3F1800ED9291 /* SwiftyJSON */; };
+		EEA3BC86246B409700ED9291 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = EEA3BC85246B409700ED9291 /* PhoneNumberKit */; };
+		EEA3BC89246B40F900ED9291 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EEA3BC88246B40F900ED9291 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA3BC89246B40F900ED9291 /* Alamofire in Frameworks */,
+				EEA3BC83246B3F1800ED9291 /* SwiftyJSON in Frameworks */,
+				EEA3BC86246B409700ED9291 /* PhoneNumberKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +173,11 @@
 			dependencies = (
 			);
 			name = RWReview;
+			packageProductDependencies = (
+				EEA3BC82246B3F1800ED9291 /* SwiftyJSON */,
+				EEA3BC85246B409700ED9291 /* PhoneNumberKit */,
+				EEA3BC88246B40F900ED9291 /* Alamofire */,
+			);
 			productName = RWReview;
 			productReference = EEA3BC4F246B3AEF00ED9291 /* RWReview.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +228,11 @@
 				Base,
 			);
 			mainGroup = EEA3BC46246B3AEF00ED9291;
+			packageReferences = (
+				EEA3BC81246B3F1800ED9291 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				EEA3BC84246B409700ED9291 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */,
+				EEA3BC87246B40F900ED9291 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = EEA3BC50246B3AEF00ED9291 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -517,6 +533,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EEA3BC81246B3F1800ED9291 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		EEA3BC84246B409700ED9291 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/PhoneNumberKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+		EEA3BC87246B40F900ED9291 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEA3BC82246B3F1800ED9291 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEA3BC81246B3F1800ED9291 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		EEA3BC85246B409700ED9291 /* PhoneNumberKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEA3BC84246B409700ED9291 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */;
+			productName = PhoneNumberKit;
+		};
+		EEA3BC88246B40F900ED9291 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEA3BC87246B40F900ED9291 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EEA3BC47246B3AEF00ED9291 /* Project object */;
 }
