@@ -15,6 +15,7 @@
 		EEA3BC5F246B3AEF00ED9291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA3BC5D246B3AEF00ED9291 /* LaunchScreen.storyboard */; };
 		EEA3BC6A246B3AF000ED9291 /* RWReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC69246B3AF000ED9291 /* RWReviewTests.swift */; };
 		EEA3BC77246B3B8700ED9291 /* EmployeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC76246B3B8700ED9291 /* EmployeesView.swift */; };
+		EEA3BC79246B3C5400ED9291 /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC78246B3C5400ED9291 /* EmployeesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EEA3BC69246B3AF000ED9291 /* RWReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWReviewTests.swift; sourceTree = "<group>"; };
 		EEA3BC6B246B3AF000ED9291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEA3BC76246B3B8700ED9291 /* EmployeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesView.swift; sourceTree = "<group>"; };
+		EEA3BC78246B3C5400ED9291 /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				EEA3BC76246B3B8700ED9291 /* EmployeesView.swift */,
+				EEA3BC78246B3C5400ED9291 /* EmployeesViewModel.swift */,
 			);
 			path = Employees;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				EEA3BC77246B3B8700ED9291 /* EmployeesView.swift in Sources */,
 				EEA3BC53246B3AEF00ED9291 /* AppDelegate.swift in Sources */,
 				EEA3BC55246B3AEF00ED9291 /* SceneDelegate.swift in Sources */,
+				EEA3BC79246B3C5400ED9291 /* EmployeesViewModel.swift in Sources */,
 				EEA3BC57246B3AEF00ED9291 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
