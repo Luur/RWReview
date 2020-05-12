@@ -66,10 +66,10 @@ struct EmployeesView: View {
             }
             .navigationBarWithShadow()
         }
+                
+        .navigationBarTitle(Text("Employees"), displayMode: .inline)
         
         .navigationBarItems(
-            leading: Text("Employees")
-                .modifier(NavigationBarTitleModifier()),
             trailing: Button(action: { self.shouldPresentAddEmployeeSheet = true }) {
                 Image("image_nb_add")
             }

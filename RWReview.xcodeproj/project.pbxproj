@@ -34,6 +34,12 @@
 		EEA3BCA5246B480100ED9291 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCA4246B480100ED9291 /* EncodableExtensions.swift */; };
 		EEA3BCA8246B488200ED9291 /* PhoneNumberKitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCA7246B488200ED9291 /* PhoneNumberKitProtocol.swift */; };
 		EEA3BCAA246B48F000ED9291 /* UserDefaultsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCA9246B48F000ED9291 /* UserDefaultsConfig.swift */; };
+		EEA3BCB0246B4B4F00ED9291 /* EmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCAF246B4B4F00ED9291 /* EmptyDataView.swift */; };
+		EEA3BCB2246B4BD300ED9291 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCB1246B4BD300ED9291 /* Constants.swift */; };
+		EEA3BCB4246B4C4B00ED9291 /* EmptyDataViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCB3246B4C4B00ED9291 /* EmptyDataViewModifier.swift */; };
+		EEA3BCB6246B4CB000ED9291 /* EmployeesSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCB5246B4CB000ED9291 /* EmployeesSectionHeader.swift */; };
+		EEA3BCB8246B4CF400ED9291 /* EmployeesListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCB7246B4CF400ED9291 /* EmployeesListRow.swift */; };
+		EEA3BCBB246B4D9400ED9291 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EEA3BCBA246B4D9400ED9291 /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,11 @@
 		EEA3BCA4246B480100ED9291 /* EncodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
 		EEA3BCA7246B488200ED9291 /* PhoneNumberKitProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberKitProtocol.swift; sourceTree = "<group>"; };
 		EEA3BCA9246B48F000ED9291 /* UserDefaultsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConfig.swift; sourceTree = "<group>"; };
+		EEA3BCAF246B4B4F00ED9291 /* EmptyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataView.swift; sourceTree = "<group>"; };
+		EEA3BCB1246B4BD300ED9291 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEA3BCB3246B4C4B00ED9291 /* EmptyDataViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataViewModifier.swift; sourceTree = "<group>"; };
+		EEA3BCB5246B4CB000ED9291 /* EmployeesSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesSectionHeader.swift; sourceTree = "<group>"; };
+		EEA3BCB7246B4CF400ED9291 /* EmployeesListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +95,7 @@
 			files = (
 				EEA3BC89246B40F900ED9291 /* Alamofire in Frameworks */,
 				EEA3BC83246B3F1800ED9291 /* SwiftyJSON in Frameworks */,
+				EEA3BCBB246B4D9400ED9291 /* KingfisherSwiftUI in Frameworks */,
 				EEA3BC86246B409700ED9291 /* PhoneNumberKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +131,7 @@
 		EEA3BC51246B3AEF00ED9291 /* RWReview */ = {
 			isa = PBXGroup;
 			children = (
+				EEA3BCAD246B4B0200ED9291 /* Views */,
 				EEA3BC95246B448E00ED9291 /* Repositories */,
 				EEA3BC90246B434E00ED9291 /* Environment */,
 				EEA3BC8D246B42D400ED9291 /* RepositoryProviders */,
@@ -166,6 +179,8 @@
 			children = (
 				EEA3BC76246B3B8700ED9291 /* EmployeesView.swift */,
 				EEA3BC78246B3C5400ED9291 /* EmployeesViewModel.swift */,
+				EEA3BCB5246B4CB000ED9291 /* EmployeesSectionHeader.swift */,
+				EEA3BCB7246B4CF400ED9291 /* EmployeesListRow.swift */,
 			);
 			path = Employees;
 			sourceTree = "<group>";
@@ -196,6 +211,7 @@
 				EEA3BC8B246B429E00ED9291 /* AlertData.swift */,
 				EEA3BC9D246B465F00ED9291 /* WebRepositoryError.swift */,
 				EEA3BCA9246B48F000ED9291 /* UserDefaultsConfig.swift */,
+				EEA3BCB1246B4BD300ED9291 /* Constants.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -252,6 +268,23 @@
 			path = PhoneNumberKit;
 			sourceTree = "<group>";
 		};
+		EEA3BCAD246B4B0200ED9291 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEA3BCAE246B4B3B00ED9291 /* EmptyDataView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEA3BCAE246B4B3B00ED9291 /* EmptyDataView */ = {
+			isa = PBXGroup;
+			children = (
+				EEA3BCAF246B4B4F00ED9291 /* EmptyDataView.swift */,
+				EEA3BCB3246B4C4B00ED9291 /* EmptyDataViewModifier.swift */,
+			);
+			path = EmptyDataView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +305,7 @@
 				EEA3BC82246B3F1800ED9291 /* SwiftyJSON */,
 				EEA3BC85246B409700ED9291 /* PhoneNumberKit */,
 				EEA3BC88246B40F900ED9291 /* Alamofire */,
+				EEA3BCBA246B4D9400ED9291 /* KingfisherSwiftUI */,
 			);
 			productName = RWReview;
 			productReference = EEA3BC4F246B3AEF00ED9291 /* RWReview.app */;
@@ -327,6 +361,7 @@
 				EEA3BC81246B3F1800ED9291 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				EEA3BC84246B409700ED9291 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */,
 				EEA3BC87246B40F900ED9291 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EEA3BCB9246B4D9400ED9291 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = EEA3BC50246B3AEF00ED9291 /* Products */;
 			projectDirPath = "";
@@ -364,10 +399,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA3BC9E246B465F00ED9291 /* WebRepositoryError.swift in Sources */,
+				EEA3BCB2246B4BD300ED9291 /* Constants.swift in Sources */,
 				EEA3BCA5246B480100ED9291 /* EncodableExtensions.swift in Sources */,
+				EEA3BCB4246B4C4B00ED9291 /* EmptyDataViewModifier.swift in Sources */,
 				EEA3BC77246B3B8700ED9291 /* EmployeesView.swift in Sources */,
 				EEA3BC9A246B455E00ED9291 /* EmployeesMemoryRepository.swift in Sources */,
 				EEA3BC7D246B3D4500ED9291 /* Employee.swift in Sources */,
+				EEA3BCB0246B4B4F00ED9291 /* EmptyDataView.swift in Sources */,
+				EEA3BCB6246B4CB000ED9291 /* EmployeesSectionHeader.swift in Sources */,
 				EEA3BC80246B3E6300ED9291 /* EmployeeViewModel.swift in Sources */,
 				EEA3BC53246B3AEF00ED9291 /* AppDelegate.swift in Sources */,
 				EEA3BC8C246B429E00ED9291 /* AlertData.swift in Sources */,
@@ -383,6 +422,7 @@
 				EEA3BC98246B452900ED9291 /* EmployeesEndpoint.swift in Sources */,
 				EEA3BCA8246B488200ED9291 /* PhoneNumberKitProtocol.swift in Sources */,
 				EEA3BC92246B436300ED9291 /* Environment.swift in Sources */,
+				EEA3BCB8246B4CF400ED9291 /* EmployeesListRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +707,14 @@
 				minimumVersion = 5.1.0;
 			};
 		};
+		EEA3BCB9246B4D9400ED9291 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -684,6 +732,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EEA3BC87246B40F900ED9291 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		EEA3BCBA246B4D9400ED9291 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEA3BCB9246B4D9400ED9291 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
