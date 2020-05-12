@@ -16,6 +16,8 @@
 		EEA3BC6A246B3AF000ED9291 /* RWReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC69246B3AF000ED9291 /* RWReviewTests.swift */; };
 		EEA3BC77246B3B8700ED9291 /* EmployeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC76246B3B8700ED9291 /* EmployeesView.swift */; };
 		EEA3BC79246B3C5400ED9291 /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC78246B3C5400ED9291 /* EmployeesViewModel.swift */; };
+		EEA3BC7D246B3D4500ED9291 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC7C246B3D4500ED9291 /* Employee.swift */; };
+		EEA3BC80246B3E6300ED9291 /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BC7F246B3E6300ED9291 /* EmployeeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		EEA3BC6B246B3AF000ED9291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEA3BC76246B3B8700ED9291 /* EmployeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesView.swift; sourceTree = "<group>"; };
 		EEA3BC78246B3C5400ED9291 /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
+		EEA3BC7C246B3D4500ED9291 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		EEA3BC7F246B3E6300ED9291 /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		EEA3BC51246B3AEF00ED9291 /* RWReview */ = {
 			isa = PBXGroup;
 			children = (
+				EEA3BC7A246B3D2700ED9291 /* Models */,
 				EEA3BC74246B3B6B00ED9291 /* Scenes */,
 				EEA3BC52246B3AEF00ED9291 /* AppDelegate.swift */,
 				EEA3BC54246B3AEF00ED9291 /* SceneDelegate.swift */,
@@ -127,6 +132,23 @@
 				EEA3BC78246B3C5400ED9291 /* EmployeesViewModel.swift */,
 			);
 			path = Employees;
+			sourceTree = "<group>";
+		};
+		EEA3BC7A246B3D2700ED9291 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEA3BC7B246B3D3100ED9291 /* Employee */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EEA3BC7B246B3D3100ED9291 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				EEA3BC7C246B3D4500ED9291 /* Employee.swift */,
+				EEA3BC7F246B3E6300ED9291 /* EmployeeViewModel.swift */,
+			);
+			path = Employee;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA3BC77246B3B8700ED9291 /* EmployeesView.swift in Sources */,
+				EEA3BC7D246B3D4500ED9291 /* Employee.swift in Sources */,
+				EEA3BC80246B3E6300ED9291 /* EmployeeViewModel.swift in Sources */,
 				EEA3BC53246B3AEF00ED9291 /* AppDelegate.swift in Sources */,
 				EEA3BC55246B3AEF00ED9291 /* SceneDelegate.swift in Sources */,
 				EEA3BC79246B3C5400ED9291 /* EmployeesViewModel.swift in Sources */,
