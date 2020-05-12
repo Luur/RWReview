@@ -74,10 +74,8 @@ extension Employee {
         init(email: String, phone: String?, startDate: TimeInterval, birthDate: TimeInterval?) {
             self.email = email
             self.phone = phone
-            self.accessLevel = accessLevel
             self.startDate = startDate
             self.birthDate = birthDate
-            self.clinicUsers = clinicUsers
         }
         
         init(json: JSON) {

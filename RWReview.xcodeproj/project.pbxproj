@@ -33,6 +33,7 @@
 		EEA3BCA2246B46E900ED9291 /* EmployeeEncodableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCA1246B46E900ED9291 /* EmployeeEncodableModel.swift */; };
 		EEA3BCA5246B480100ED9291 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCA4246B480100ED9291 /* EncodableExtensions.swift */; };
 		EEA3BCA8246B488200ED9291 /* PhoneNumberKitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCA7246B488200ED9291 /* PhoneNumberKitProtocol.swift */; };
+		EEA3BCAA246B48F000ED9291 /* UserDefaultsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCA9246B48F000ED9291 /* UserDefaultsConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		EEA3BCA1246B46E900ED9291 /* EmployeeEncodableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeEncodableModel.swift; sourceTree = "<group>"; };
 		EEA3BCA4246B480100ED9291 /* EncodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
 		EEA3BCA7246B488200ED9291 /* PhoneNumberKitProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberKitProtocol.swift; sourceTree = "<group>"; };
+		EEA3BCA9246B48F000ED9291 /* UserDefaultsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				EEA3BCA3246B47E800ED9291 /* Extensions */,
 				EEA3BC8B246B429E00ED9291 /* AlertData.swift */,
 				EEA3BC9D246B465F00ED9291 /* WebRepositoryError.swift */,
+				EEA3BCA9246B48F000ED9291 /* UserDefaultsConfig.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				EEA3BCA2246B46E900ED9291 /* EmployeeEncodableModel.swift in Sources */,
 				EEA3BC9C246B457B00ED9291 /* EmployeesWebRepository.swift in Sources */,
 				EEA3BC94246B43D900ED9291 /* Endpoint.swift in Sources */,
+				EEA3BCAA246B48F000ED9291 /* UserDefaultsConfig.swift in Sources */,
 				EEA3BC98246B452900ED9291 /* EmployeesEndpoint.swift in Sources */,
 				EEA3BCA8246B488200ED9291 /* PhoneNumberKitProtocol.swift in Sources */,
 				EEA3BC92246B436300ED9291 /* Environment.swift in Sources */,

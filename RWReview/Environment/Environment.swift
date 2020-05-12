@@ -44,7 +44,7 @@ class Environment {
     }
     
     private static func getSavedEnvironment() -> Environment {
-        guard let environmentName = UserDefaultsConfig.environment.value else {
+        guard let environmentName = UserDefaultsConfig.environment else {
             fatalError("No saved environment")
         }
         return getEnvironment(name: environmentName)
@@ -52,7 +52,7 @@ class Environment {
     
     static func saveEnvironment(name: String) {
         cachedCurrentEnvironment = getEnvironment(name: name)
-        UserDefaultsConfig.environment.value = name
+        UserDefaultsConfig.environment = name
     }
     
     private static func getEnvironment(name: String) -> Environment {
@@ -100,10 +100,10 @@ extension Environment {
     
     private var token : String? {
         get {
-            UserDefaultsConfig.token.value
+            UserDefaultsConfig.token
         }
         set {
-            UserDefaultsConfig.token.value = newValue
+            UserDefaultsConfig.token = newValue
         }
     }
     

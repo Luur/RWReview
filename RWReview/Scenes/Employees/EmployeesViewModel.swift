@@ -44,10 +44,10 @@ class EmployeesViewModel: ObservableObject {
     }
 }
 
-extension EmployeesViewModel: AddEmployeeDelegate {
-    
-    func employeeCreated(_ employee: EmployeeViewModel) {
-        employees.append(employee)
-        filterEmployees()
-    }
-}
+//extension EmployeesViewModel: AddEmployeeDelegate {
+//    
+//    func employeeCreated(_ employee: EmployeeViewModel) {
+//        employees.append(employee)
+//        filterEmployees()
+//    }
+//}
