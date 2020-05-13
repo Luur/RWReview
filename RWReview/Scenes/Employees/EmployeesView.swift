@@ -27,7 +27,7 @@ struct EmployeesView: View {
                         
                         ForEach(employeesViewModel.activeEmployees) { employee in
                             
-                            NavigationLink(destination: EmployeeDetailsView(employee: employee)) {
+                            NavigationLink(destination: Text("Employee Details")) {
                                 
                                 EmployeesListRow(name: employee.fullName, role: employee.role?.uppercasedName, profilePictureURL: employee.profilePictureURL, isActive: employee.isActive)
                             }
@@ -41,7 +41,7 @@ struct EmployeesView: View {
                         
                         ForEach(employeesViewModel.inactiveEmployees) { employee in
                             
-                            NavigationLink(destination: EmployeeDetailsView(employee: employee)) {
+                            NavigationLink(destination: Text("Employee Details")) {
                                 
                                 EmployeesListRow(name: employee.fullName, role: employee.role?.uppercasedName, profilePictureURL: employee.profilePictureURL, isActive: employee.isActive)
                             }
@@ -62,9 +62,8 @@ struct EmployeesView: View {
         
         .sheet(isPresented: $shouldPresentAddEmployeeSheet) {
             NavigationView {
-                AddEmployeeView(delegate: self.employeesViewModel as AddEmployeeDelegate)
+                Text("Add Employee")//AddEmployeeView(delegate: self.employeesViewModel as AddEmployeeDelegate)
             }
-            .navigationBarWithShadow()
         }
                 
         .navigationBarTitle(Text("Employees"), displayMode: .inline)
