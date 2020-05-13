@@ -42,6 +42,9 @@
 		EEA3BCBB246B4D9400ED9291 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EEA3BCBA246B4D9400ED9291 /* KingfisherSwiftUI */; };
 		EEA3BCBE246BEEA200ED9291 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = EEA3BCBD246BEEA200ED9291 /* Introspect */; };
 		EEA3BCC0246BEEF300ED9291 /* PullToRefreshRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCBF246BEEF300ED9291 /* PullToRefreshRepresentation.swift */; };
+		EEA3BCC3246BF88A00ED9291 /* AddEmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCC2246BF88A00ED9291 /* AddEmployeeViewModel.swift */; };
+		EEA3BCC5246BF96200ED9291 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCC4246BF96200ED9291 /* Validator.swift */; };
+		EEA3BCC8246BF9A500ED9291 /* EmployeeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCC7246BF9A500ED9291 /* EmployeeError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		EEA3BCB5246B4CB000ED9291 /* EmployeesSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesSectionHeader.swift; sourceTree = "<group>"; };
 		EEA3BCB7246B4CF400ED9291 /* EmployeesListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListRow.swift; sourceTree = "<group>"; };
 		EEA3BCBF246BEEF300ED9291 /* PullToRefreshRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshRepresentation.swift; sourceTree = "<group>"; };
+		EEA3BCC2246BF88A00ED9291 /* AddEmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewModel.swift; sourceTree = "<group>"; };
+		EEA3BCC4246BF96200ED9291 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		EEA3BCC7246BF9A500ED9291 /* EmployeeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,7 @@
 		EEA3BC74246B3B6B00ED9291 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EEA3BCC1246BF87100ED9291 /* AddEmployee */,
 				EEA3BC75246B3B7600ED9291 /* Employees */,
 			);
 			path = Scenes;
@@ -210,12 +217,13 @@
 		EEA3BC8A246B428400ED9291 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				EEA3BCC6246BF98F00ED9291 /* ErrorTypes */,
 				EEA3BCA6246B486400ED9291 /* PhoneNumberKit */,
 				EEA3BCA3246B47E800ED9291 /* Extensions */,
 				EEA3BC8B246B429E00ED9291 /* AlertData.swift */,
-				EEA3BC9D246B465F00ED9291 /* WebRepositoryError.swift */,
 				EEA3BCA9246B48F000ED9291 /* UserDefaultsConfig.swift */,
 				EEA3BCB1246B4BD300ED9291 /* Constants.swift */,
+				EEA3BCC4246BF96200ED9291 /* Validator.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -288,6 +296,23 @@
 				EEA3BCB3246B4C4B00ED9291 /* EmptyDataViewModifier.swift */,
 			);
 			path = EmptyDataView;
+			sourceTree = "<group>";
+		};
+		EEA3BCC1246BF87100ED9291 /* AddEmployee */ = {
+			isa = PBXGroup;
+			children = (
+				EEA3BCC2246BF88A00ED9291 /* AddEmployeeViewModel.swift */,
+			);
+			path = AddEmployee;
+			sourceTree = "<group>";
+		};
+		EEA3BCC6246BF98F00ED9291 /* ErrorTypes */ = {
+			isa = PBXGroup;
+			children = (
+				EEA3BC9D246B465F00ED9291 /* WebRepositoryError.swift */,
+				EEA3BCC7246BF9A500ED9291 /* EmployeeError.swift */,
+			);
+			path = ErrorTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,8 +434,10 @@
 				EEA3BCB2246B4BD300ED9291 /* Constants.swift in Sources */,
 				EEA3BCA5246B480100ED9291 /* EncodableExtensions.swift in Sources */,
 				EEA3BCB4246B4C4B00ED9291 /* EmptyDataViewModifier.swift in Sources */,
+				EEA3BCC5246BF96200ED9291 /* Validator.swift in Sources */,
 				EEA3BC77246B3B8700ED9291 /* EmployeesView.swift in Sources */,
 				EEA3BC9A246B455E00ED9291 /* EmployeesMemoryRepository.swift in Sources */,
+				EEA3BCC8246BF9A500ED9291 /* EmployeeError.swift in Sources */,
 				EEA3BC7D246B3D4500ED9291 /* Employee.swift in Sources */,
 				EEA3BCB0246B4B4F00ED9291 /* EmptyDataView.swift in Sources */,
 				EEA3BCB6246B4CB000ED9291 /* EmployeesSectionHeader.swift in Sources */,
@@ -425,6 +452,7 @@
 				EEA3BC8F246B42F500ED9291 /* EmployeesRepositoryProvider.swift in Sources */,
 				EEA3BCA2246B46E900ED9291 /* EmployeeEncodableModel.swift in Sources */,
 				EEA3BC9C246B457B00ED9291 /* EmployeesWebRepository.swift in Sources */,
+				EEA3BCC3246BF88A00ED9291 /* AddEmployeeViewModel.swift in Sources */,
 				EEA3BC94246B43D900ED9291 /* Endpoint.swift in Sources */,
 				EEA3BCAA246B48F000ED9291 /* UserDefaultsConfig.swift in Sources */,
 				EEA3BC98246B452900ED9291 /* EmployeesEndpoint.swift in Sources */,
