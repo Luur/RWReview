@@ -60,6 +60,10 @@
 		EEA3BCEA246C044600ED9291 /* ValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCE9246C044600ED9291 /* ValidatorSpec.swift */; };
 		EEA3BCEC246C049D00ED9291 /* PhoneNumberKitMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCEB246C049D00ED9291 /* PhoneNumberKitMock.swift */; };
 		EEAED315246C060600822436 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = EEAED314246C060600822436 /* PhoneNumberMetadata.json */; };
+		EEAED318246C069F00822436 /* EmployeeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED317246C069F00822436 /* EmployeeSpec.swift */; };
+		EEAED31A246C072D00822436 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED319246C072D00822436 /* Responses.swift */; };
+		EEAED31C246C07F300822436 /* EmployeeViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED31B246C07F300822436 /* EmployeeViewModelSpec.swift */; };
+		EEAED31E246C08AD00822436 /* EmployeeEncodableModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED31D246C08AD00822436 /* EmployeeEncodableModelSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +127,10 @@
 		EEA3BCE9246C044600ED9291 /* ValidatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorSpec.swift; sourceTree = "<group>"; };
 		EEA3BCEB246C049D00ED9291 /* PhoneNumberKitMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberKitMock.swift; sourceTree = "<group>"; };
 		EEAED314246C060600822436 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhoneNumberMetadata.json; sourceTree = "<group>"; };
+		EEAED317246C069F00822436 /* EmployeeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeSpec.swift; sourceTree = "<group>"; };
+		EEAED319246C072D00822436 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		EEAED31B246C07F300822436 /* EmployeeViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModelSpec.swift; sourceTree = "<group>"; };
+		EEAED31D246C08AD00822436 /* EmployeeEncodableModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeEncodableModelSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +209,7 @@
 		EEA3BC68246B3AF000ED9291 /* RWReviewTests */ = {
 			isa = PBXGroup;
 			children = (
+				EEAED316246C066800822436 /* Models */,
 				EEA3BCE0246C02FB00ED9291 /* Utility */,
 				EEA3BCDD246C021100ED9291 /* Vendors */,
 				EEA3BCDA246C018E00ED9291 /* Mocks */,
@@ -391,6 +400,7 @@
 			children = (
 				EEA3BCDE246C021D00ED9291 /* Seeds.swift */,
 				EEA3BCE3246C036700ED9291 /* HTTPErrors.swift */,
+				EEAED319246C072D00822436 /* Responses.swift */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -404,6 +414,16 @@
 				EEA3BCE9246C044600ED9291 /* ValidatorSpec.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		EEAED316246C066800822436 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEAED317246C069F00822436 /* EmployeeSpec.swift */,
+				EEAED31B246C07F300822436 /* EmployeeViewModelSpec.swift */,
+				EEAED31D246C08AD00822436 /* EmployeeEncodableModelSpec.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,9 +593,13 @@
 				EEA3BCDF246C021D00ED9291 /* Seeds.swift in Sources */,
 				EEA3BCEA246C044600ED9291 /* ValidatorSpec.swift in Sources */,
 				EEA3BCCB246BFE8700ED9291 /* EmployeeRepositoryProviderSpec.swift in Sources */,
+				EEAED31E246C08AD00822436 /* EmployeeEncodableModelSpec.swift in Sources */,
+				EEAED31C246C07F300822436 /* EmployeeViewModelSpec.swift in Sources */,
 				EEA3BCEC246C049D00ED9291 /* PhoneNumberKitMock.swift in Sources */,
+				EEAED318246C069F00822436 /* EmployeeSpec.swift in Sources */,
 				EEA3BCD4246BFF9F00ED9291 /* UserDefaultsExtensions.swift in Sources */,
 				EEA3BCD9246C014E00ED9291 /* EmployeeWebRepositorySpec.swift in Sources */,
+				EEAED31A246C072D00822436 /* Responses.swift in Sources */,
 				EEA3BCE8246C042000ED9291 /* AlertDataSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
