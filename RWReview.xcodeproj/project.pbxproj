@@ -56,6 +56,10 @@
 		EEA3BCE2246C031E00ED9291 /* WebRepositoryErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCE1246C031E00ED9291 /* WebRepositoryErrorSpec.swift */; };
 		EEA3BCE4246C036700ED9291 /* HTTPErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCE3246C036700ED9291 /* HTTPErrors.swift */; };
 		EEA3BCE6246C03A300ED9291 /* EmployeeErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCE5246C03A300ED9291 /* EmployeeErrorSpec.swift */; };
+		EEA3BCE8246C042000ED9291 /* AlertDataSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCE7246C042000ED9291 /* AlertDataSpec.swift */; };
+		EEA3BCEA246C044600ED9291 /* ValidatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCE9246C044600ED9291 /* ValidatorSpec.swift */; };
+		EEA3BCEC246C049D00ED9291 /* PhoneNumberKitMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCEB246C049D00ED9291 /* PhoneNumberKitMock.swift */; };
+		EEAED315246C060600822436 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = EEAED314246C060600822436 /* PhoneNumberMetadata.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +119,10 @@
 		EEA3BCE1246C031E00ED9291 /* WebRepositoryErrorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepositoryErrorSpec.swift; sourceTree = "<group>"; };
 		EEA3BCE3246C036700ED9291 /* HTTPErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPErrors.swift; sourceTree = "<group>"; };
 		EEA3BCE5246C03A300ED9291 /* EmployeeErrorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeErrorSpec.swift; sourceTree = "<group>"; };
+		EEA3BCE7246C042000ED9291 /* AlertDataSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDataSpec.swift; sourceTree = "<group>"; };
+		EEA3BCE9246C044600ED9291 /* ValidatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorSpec.swift; sourceTree = "<group>"; };
+		EEA3BCEB246C049D00ED9291 /* PhoneNumberKitMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberKitMock.swift; sourceTree = "<group>"; };
+		EEAED314246C060600822436 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhoneNumberMetadata.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +312,7 @@
 		EEA3BCA6246B486400ED9291 /* PhoneNumberKit */ = {
 			isa = PBXGroup;
 			children = (
+				EEAED314246C060600822436 /* PhoneNumberMetadata.json */,
 				EEA3BCA7246B488200ED9291 /* PhoneNumberKitProtocol.swift */,
 			);
 			path = PhoneNumberKit;
@@ -372,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				EEA3BCDB246C01A800ED9291 /* EnvironmentMock.swift */,
+				EEA3BCEB246C049D00ED9291 /* PhoneNumberKitMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -390,6 +400,8 @@
 			children = (
 				EEA3BCE1246C031E00ED9291 /* WebRepositoryErrorSpec.swift */,
 				EEA3BCE5246C03A300ED9291 /* EmployeeErrorSpec.swift */,
+				EEA3BCE7246C042000ED9291 /* AlertDataSpec.swift */,
+				EEA3BCE9246C044600ED9291 /* ValidatorSpec.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -495,6 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEAED315246C060600822436 /* PhoneNumberMetadata.json in Resources */,
 				EEA3BC5F246B3AEF00ED9291 /* LaunchScreen.storyboard in Resources */,
 				EEA3BC5C246B3AEF00ED9291 /* Preview Assets.xcassets in Resources */,
 				EEA3BC59246B3AEF00ED9291 /* Assets.xcassets in Resources */,
@@ -558,9 +571,12 @@
 				EEA3BCE6246C03A300ED9291 /* EmployeeErrorSpec.swift in Sources */,
 				EEA3BCE2246C031E00ED9291 /* WebRepositoryErrorSpec.swift in Sources */,
 				EEA3BCDF246C021D00ED9291 /* Seeds.swift in Sources */,
+				EEA3BCEA246C044600ED9291 /* ValidatorSpec.swift in Sources */,
 				EEA3BCCB246BFE8700ED9291 /* EmployeeRepositoryProviderSpec.swift in Sources */,
+				EEA3BCEC246C049D00ED9291 /* PhoneNumberKitMock.swift in Sources */,
 				EEA3BCD4246BFF9F00ED9291 /* UserDefaultsExtensions.swift in Sources */,
 				EEA3BCD9246C014E00ED9291 /* EmployeeWebRepositorySpec.swift in Sources */,
+				EEA3BCE8246C042000ED9291 /* AlertDataSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

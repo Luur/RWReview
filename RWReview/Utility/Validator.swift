@@ -44,7 +44,7 @@ class PhoneNumberValidationRule: ValidationRule {
     
     func validate(_ input: String) -> Error? {
         guard phoneNumberKit.isValidPhoneNumber(input) else { return error }
-        let phoneNumber =  try? phoneNumberKit.parse(input)
+        let phoneNumber = try? phoneNumberKit.parse(input)
         return phoneNumber == nil ? error : nil
     }
 }
