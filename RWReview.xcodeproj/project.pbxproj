@@ -53,6 +53,9 @@
 		EEA3BCD9246C014E00ED9291 /* EmployeeWebRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCD8246C014E00ED9291 /* EmployeeWebRepositorySpec.swift */; };
 		EEA3BCDC246C01A800ED9291 /* EnvironmentMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCDB246C01A800ED9291 /* EnvironmentMock.swift */; };
 		EEA3BCDF246C021D00ED9291 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCDE246C021D00ED9291 /* Seeds.swift */; };
+		EEA3BCE2246C031E00ED9291 /* WebRepositoryErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCE1246C031E00ED9291 /* WebRepositoryErrorSpec.swift */; };
+		EEA3BCE4246C036700ED9291 /* HTTPErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCE3246C036700ED9291 /* HTTPErrors.swift */; };
+		EEA3BCE6246C03A300ED9291 /* EmployeeErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA3BCE5246C03A300ED9291 /* EmployeeErrorSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,9 @@
 		EEA3BCD8246C014E00ED9291 /* EmployeeWebRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeWebRepositorySpec.swift; sourceTree = "<group>"; };
 		EEA3BCDB246C01A800ED9291 /* EnvironmentMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentMock.swift; sourceTree = "<group>"; };
 		EEA3BCDE246C021D00ED9291 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
+		EEA3BCE1246C031E00ED9291 /* WebRepositoryErrorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepositoryErrorSpec.swift; sourceTree = "<group>"; };
+		EEA3BCE3246C036700ED9291 /* HTTPErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPErrors.swift; sourceTree = "<group>"; };
+		EEA3BCE5246C03A300ED9291 /* EmployeeErrorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeErrorSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +193,7 @@
 		EEA3BC68246B3AF000ED9291 /* RWReviewTests */ = {
 			isa = PBXGroup;
 			children = (
+				EEA3BCE0246C02FB00ED9291 /* Utility */,
 				EEA3BCDD246C021100ED9291 /* Vendors */,
 				EEA3BCDA246C018E00ED9291 /* Mocks */,
 				EEA3BCD7246C013300ED9291 /* Repositories */,
@@ -373,8 +380,18 @@
 			isa = PBXGroup;
 			children = (
 				EEA3BCDE246C021D00ED9291 /* Seeds.swift */,
+				EEA3BCE3246C036700ED9291 /* HTTPErrors.swift */,
 			);
 			path = Vendors;
+			sourceTree = "<group>";
+		};
+		EEA3BCE0246C02FB00ED9291 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EEA3BCE1246C031E00ED9291 /* WebRepositoryErrorSpec.swift */,
+				EEA3BCE5246C03A300ED9291 /* EmployeeErrorSpec.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -535,8 +552,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA3BCE4246C036700ED9291 /* HTTPErrors.swift in Sources */,
 				EEA3BCDC246C01A800ED9291 /* EnvironmentMock.swift in Sources */,
 				EEA3BC6A246B3AF000ED9291 /* RWReviewTests.swift in Sources */,
+				EEA3BCE6246C03A300ED9291 /* EmployeeErrorSpec.swift in Sources */,
+				EEA3BCE2246C031E00ED9291 /* WebRepositoryErrorSpec.swift in Sources */,
 				EEA3BCDF246C021D00ED9291 /* Seeds.swift in Sources */,
 				EEA3BCCB246BFE8700ED9291 /* EmployeeRepositoryProviderSpec.swift in Sources */,
 				EEA3BCD4246BFF9F00ED9291 /* UserDefaultsExtensions.swift in Sources */,
