@@ -67,6 +67,9 @@
 		EEAED322246C09D200822436 /* EmployeesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED321246C09D200822436 /* EmployeesViewModelSpec.swift */; };
 		EEAED326246C0A5900822436 /* EmployeesRepositoryProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED325246C0A5900822436 /* EmployeesRepositoryProviderMock.swift */; };
 		EEAED328246C0AAB00822436 /* EmployeesRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED327246C0AAB00822436 /* EmployeesRepositoryMock.swift */; };
+		EEAED32B246C0C4700822436 /* AddEmployeeViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED32A246C0C4700822436 /* AddEmployeeViewModelSpec.swift */; };
+		EEAED32D246C0C7D00822436 /* ValidatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED32C246C0C7D00822436 /* ValidatorMock.swift */; };
+		EEAED32F246C0CA700822436 /* AddEmployeeDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAED32E246C0CA700822436 /* AddEmployeeDelegateMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +140,9 @@
 		EEAED321246C09D200822436 /* EmployeesViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModelSpec.swift; sourceTree = "<group>"; };
 		EEAED325246C0A5900822436 /* EmployeesRepositoryProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesRepositoryProviderMock.swift; sourceTree = "<group>"; };
 		EEAED327246C0AAB00822436 /* EmployeesRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesRepositoryMock.swift; sourceTree = "<group>"; };
+		EEAED32A246C0C4700822436 /* AddEmployeeViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewModelSpec.swift; sourceTree = "<group>"; };
+		EEAED32C246C0C7D00822436 /* ValidatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorMock.swift; sourceTree = "<group>"; };
+		EEAED32E246C0CA700822436 /* AddEmployeeDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeDelegateMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,6 +406,8 @@
 				EEAED323246C0A2800822436 /* RepositoryProviders */,
 				EEA3BCDB246C01A800ED9291 /* EnvironmentMock.swift */,
 				EEA3BCEB246C049D00ED9291 /* PhoneNumberKitMock.swift */,
+				EEAED32C246C0C7D00822436 /* ValidatorMock.swift */,
+				EEAED32E246C0CA700822436 /* AddEmployeeDelegateMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -438,6 +446,7 @@
 		EEAED31F246C09B500822436 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EEAED329246C0C2900822436 /* AddEmployee */,
 				EEAED320246C09BF00822436 /* Employees */,
 			);
 			path = Scenes;
@@ -465,6 +474,14 @@
 				EEAED327246C0AAB00822436 /* EmployeesRepositoryMock.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		EEAED329246C0C2900822436 /* AddEmployee */ = {
+			isa = PBXGroup;
+			children = (
+				EEAED32A246C0C4700822436 /* AddEmployeeViewModelSpec.swift */,
+			);
+			path = AddEmployee;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -627,6 +644,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA3BCE4246C036700ED9291 /* HTTPErrors.swift in Sources */,
+				EEAED32B246C0C4700822436 /* AddEmployeeViewModelSpec.swift in Sources */,
+				EEAED32F246C0CA700822436 /* AddEmployeeDelegateMock.swift in Sources */,
 				EEA3BCDC246C01A800ED9291 /* EnvironmentMock.swift in Sources */,
 				EEAED328246C0AAB00822436 /* EmployeesRepositoryMock.swift in Sources */,
 				EEA3BC6A246B3AF000ED9291 /* RWReviewTests.swift in Sources */,
@@ -641,6 +660,7 @@
 				EEAED318246C069F00822436 /* EmployeeSpec.swift in Sources */,
 				EEA3BCD4246BFF9F00ED9291 /* UserDefaultsExtensions.swift in Sources */,
 				EEA3BCD9246C014E00ED9291 /* EmployeeWebRepositorySpec.swift in Sources */,
+				EEAED32D246C0C7D00822436 /* ValidatorMock.swift in Sources */,
 				EEAED322246C09D200822436 /* EmployeesViewModelSpec.swift in Sources */,
 				EEAED31A246C072D00822436 /* Responses.swift in Sources */,
 				EEAED326246C0A5900822436 /* EmployeesRepositoryProviderMock.swift in Sources */,
